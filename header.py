@@ -24,12 +24,13 @@ def show_header():
         .single-row-header {{
             position: relative;
             width: 100%;
-            height: 140px; /* ajuste a altura total do header aqui */
+            height: 100px; /* ajuste a altura total do header aqui */
             display: flex;
             align-items: center; /* alinha verticalmente o conteúdo ao centro da "linha" */
             justify-content: center; /* centraliza o título horizontalmente */
             background: transparent;
-            margin-bottom: 24px;
+            margin-bottom: 12px;
+            padding-top: 4px; /* mantém pequeno espaçamento interno se necessário */
         }}
 
         /* Título centralizado */
@@ -45,8 +46,8 @@ def show_header():
         /* Logo posicionado mais à esquerda e um pouco acima da linha central */
         .single-row-logo {{
             position: absolute;
-            left: 18px;  /* distância da borda esquerda — aumente/decrease conforme desejar */
-            top: 10px;   /* ajuste para "subir" ou "descer" o logo */
+            left: 12px;  /* distância da borda esquerda — aumente/decrease conforme desejar */
+            top: -12px;   /* ajuste para "subir" ou "descer" o logo */
             width: 150px; /* controla o tamanho do logo */
             height: auto;
             z-index: 3;
@@ -54,9 +55,9 @@ def show_header():
 
         /* Responsividade: reduz tamanho / posicionamento em telas pequenas */
         @media (max-width: 800px) {{
-            .single-row-header {{ height: 110px; }}
+            .single-row-header {{ height: 86px; }}
             .single-row-header h1 {{ font-size: 22px; }}
-            .single-row-logo {{ left: 10px; width: 110px; top: 6px; }}
+            .single-row-logo {{ left: 10px; width: 110px; top: -8px; }}
         }}
         @media (max-width: 420px) {{
             .single-row-header {{ height: 90px; }}
