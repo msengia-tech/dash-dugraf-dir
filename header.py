@@ -73,7 +73,3 @@ def show_header():
         """,
         unsafe_allow_html=True,
     )
-
-
-# A partir daqui segue o resto do app...
-st.write("Conteúdo do dashboard abaixo...")
