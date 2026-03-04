@@ -14,6 +14,6 @@ def show_header():
         st.image("assets/logo_dugraf_branco.png", width=150)  # controla o tamanho aqui
     with col2:
         st.markdown(
-            "<h1 style='margin:0; margin-top:50px; padding-top:8px;'>DASHBOARD DUGRAF - DIRETORIA</h1>",
+            "<h1 style='margin:0; margin-top:30px; padding-top:8px;'>DASHBOARD DUGRAF - DIRETORIA</h1>",
             unsafe_allow_html=True,
         )
